@@ -34,6 +34,7 @@ $ sudo apt-get install gradle
 ```
 
 
+
 Com veurem, el paquet arrossega moltes dependències. Diem que sí a tot, i una vegada instal·lat, podem comprovar la versió amb:
 
 ```
