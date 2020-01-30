@@ -279,7 +279,9 @@ repositories {
     mavenCentral()
 }
 ```
+
 Ara haurem d'apegar el codi proporcionat pel repositori de Gradle a la secció dependencies. Aquesta quedarà de la següent manera:
+
 ```
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -295,33 +297,6 @@ dependencies {
 
 Ara, quan construïm el projecte, automàticament es descarregarà la llibreria commons-math3 i estarà preparada per utilitzar-se al projecte. Quan fem un clean, aquesta s'esborrarà, per tornar a descarregar-se en una nova construcció.
 
-4. Gradle en VSCode i Netbeans
-
-4.1. Gradle i VSCode
-
-VSCode disposa d'una extensió de suport al llenguatge Gradle, que ens pot ajudar a construir el fitxer build.gradle i a remarcar-ne la sintaxi, però, a diferència de la de Maven, no ens ofereix la possibilitat de llençar objectius directament, cosa que haurem de seguir fent des de la consola.
-
-Extensió de Gradle per a VSCode
-
-4.2. Projectes Gradle a Netbeans
-
-A partir de la versió 11 de Netbeans, els projectes GRadle se suporten de forma nativa. Per tal de crear un projecte Gradle en Netbeans, farem com en tot projecte: File -> New Project. Ara, haurem de seleccionar que volem generar una aplicació java en Gradle:
-
-Creació d'un projecte Gradle a Netbeans
-
-I després indicar el nom i la ubicació del projecte:
-
-Nom i localització del projecte
-
-Fet açò, fem click en Finish, per veure com queda el projecte. Com podem apreciar, amb Netbeans se'ns queda una estructura més senzilla que utilitzant només Gradle, on veiem, des de la vista de projecte que tenim el paquet crear dins la carpeta Source Packages, i l'script build.gradle a la carpeta Build Scripts.
-
-Vista del projecte
-
-Si fem clic a la vista de fitxers, veurem que tenim l'estructura de carpetes que dóna lloc al paquet, i el fitxer build.gradle a la carpeta arrel. També veurem que aquest fitxer és basant més senzill que el que ens ha generat Gradle anteriorment.
-
-Fitxers del projecte
-
-El principal inconvenient que trobarem amb Gradle al Netbeans és que requereix la versió 4.10 per funcionar, mentre que nosaltres estem treballant amb la versió 5.1, pel que per executar el projecte ha de descarregar aquesta versió. Si volem utilitzar la versió de Gradle que tenim instal·lada, podem utilitzar-la amb el projecte creat en Netbeans des de la línia d'ordres sense problemes.
 
 TO-DO
 
