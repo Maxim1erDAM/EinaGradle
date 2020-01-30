@@ -8,7 +8,7 @@
 
 
 >### UNITAT 4. Automatització amb Gradle.
-L'eina Gradle (format web)
+
 1. Introducció a Gradle
 
 Fins ara hem vist dues eines per tal de crear projectes en Java i gestionar les seues dependències: Ant i Maven. Ant, com hem vist és una eina molt versàtil, però deixa al desenvolupador la responsabilitat de definir totes les tasques que s'han de fer i com fer-les, el que porta a grans fitxers de construcció (build.xml), que a més poden ser molt complexos. Maven, per la seua banda, ens ho dóna tot predefinit, i els fitxers de configuració (pom.xml) no són excessivament complexos. A més, dóna suport a tot el cicle de vida de construcció. L'inconvenient que suposa és que quan volem realitzar algun projecte que no s'ajuste als arquetipus que té predefinits, pot arribar a ser bastant complex. Per altra banda, al tractar-se d'una eina tan completa, també creix en complexitat, fins al punt de, com hem vist a l'exemple de l'hola Món, generar fitxers de construcció pom.xml més llargs que el propi codi de l'aplicació.
