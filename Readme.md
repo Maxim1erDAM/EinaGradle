@@ -323,11 +323,6 @@ Fitxers del projecte
 
 El principal inconvenient que trobarem amb Gradle al Netbeans és que requereix la versió 4.10 per funcionar, mentre que nosaltres estem treballant amb la versió 5.1, pel que per executar el projecte ha de descarregar aquesta versió. Si volem utilitzar la versió de Gradle que tenim instal·lada, podem utilitzar-la amb el projecte creat en Netbeans des de la línia d'ordres sense problemes.
 
-Per a més informació sobre Gradle, podeu consultar els següents enllaços:
-
-    Construcció de projectes Gradle: https://spring.io/guides/gs/gradle/
-    Web oficial de Gradle: https://gradle.org/
-
     TO-DO
 
     Creeu un projecte amb Gradle per al vostre codi de la calculadora. A aquesta calculadora haureu d'afegir ara a més dos mètodes més:
