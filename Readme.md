@@ -323,23 +323,24 @@ Fitxers del projecte
 
 El principal inconvenient que trobarem amb Gradle al Netbeans és que requereix la versió 4.10 per funcionar, mentre que nosaltres estem treballant amb la versió 5.1, pel que per executar el projecte ha de descarregar aquesta versió. Si volem utilitzar la versió de Gradle que tenim instal·lada, podem utilitzar-la amb el projecte creat en Netbeans des de la línia d'ordres sense problemes.
 
-    TO-DO
+TO-DO
 
-    Creeu un projecte amb Gradle per al vostre codi de la calculadora. A aquesta calculadora haureu d'afegir ara a més dos mètodes més:
+   Creeu un projecte amb Gradle per al vostre codi de la calculadora. A aquesta calculadora haureu d'afegir ara a més dos mètodes més:
 
-    public Boolean esPrim(float op1){...}
+   public Boolean esPrim(float op1){...}
 
-    Aquesta funció ens retornarà un valor lògic, indicant si el número és prim o no (prim=divisible només per ell mateix i per 1).
+   Aquesta funció ens retornarà un valor lògic, indicant si el número és prim o no (prim=divisible només per ell mateix i per 1).
 
-    public Integer proximPrim(float op1){...}
+   public Integer proximPrim(float op1){...}
 
-    Que ens retornarà el següent número prim al que li indiquem (si indiquem un prim ens retornarà el mateix)
+   Que ens retornarà el següent número prim al que li indiquem (si indiquem un prim ens retornarà el mateix)
 
-    Per a estos mètodes haureu d'utilitzar les els mètodes estàtics isPrime((int) op1)) i nextPrime((int) op1) de la classe Primes, que haurem d'importar al projecte mitjançant l'import de la llibreria org.apache.commons.math3.primes.Primes; que hem inclòs per utilitzar al fitxer gradle.build.
+   Per a estos mètodes haureu d'utilitzar les els mètodes estàtics isPrime((int) op1)) i nextPrime((int) op1) de la classe Primes, que haurem d'importar al projecte mitjançant l'import de la llibreria org.apache.commons.math3.primes.Primes; que hem inclòs per utilitzar al fitxer gradle.build.
 
-    Ara, a més, al programa principal, després de mostrar totes les operacions anteriors, haurà d'indicar si el primer argument proporcionat és prim i quin és el seu pròxim número prim.
+   Ara, a més, al programa principal, després de mostrar totes les operacions anteriors, haurà d'indicar si el primer argument proporcionat és prim i quin és el seu pròxim número prim.
 
-    L'eixida del programa serà una cosa semblant a aquesta:
+   L'eixida del programa serà una cosa semblant a aquesta:
+
 
     $ gradle run --args "4 3"
 
