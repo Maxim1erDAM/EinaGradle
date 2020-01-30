@@ -7,9 +7,9 @@
 
 
 
->### UNITAT 4. Automatització amb Make.
+>### UNITAT 4. Automatització amb Gradle.
 >
->***[1.-Com instalar Git i Make en Ubuntu 18.](https://github.com/Maxim1erDAM/Unitat4#1-com-instalar-git-i-make-en-ubuntu-18)***
+>***[1.-Com instalar Gradle en Ubuntu 18.](https://github.com/Maxim1erDAM/Unitat4#1-com-instalar-git-i-make-en-ubuntu-18)***
 >
 >***[2. Com utilitzar Git Part 1](https://github.com/Maxim1erDAM/Unitat4#2-com-utilitzar-git-part-1)***
 >
