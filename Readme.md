@@ -21,7 +21,7 @@
 
 
 
-# UNITAT 4. Automatització amb Make.
+# UNITAT 4. Automatització amb Gradle.
 
 
 ## 1.-Com instalar Git i Make en Ubuntu 18.
