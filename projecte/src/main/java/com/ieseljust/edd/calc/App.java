@@ -1,6 +1,7 @@
 package com.ieseljust.edd.calc;
 
 import com.ieseljust.edd.calc.Calculadora;
+import static java.lang.Math.*;
 
 public class App {
     private static float operand1;
@@ -23,6 +24,8 @@ public class App {
         System.out.println("La divisió entre "+operand1+" i "+operand2+" és "+myCalc.divideix(operand1, operand2));
 	System.out.println("El número major entre els números pasat com a arguments, que són: "+operand1+" i "+operand2+". El major es el número:"+myCalc.majorque(operand1, operand2));
 	System.out.println("La mitja entre els números pasat com a arguments, que són: "+operand1+" i "+operand2+". El mitja es el número:"+myCalc.mitja(operand1, operand2));
+	System.out.println("El operand 1 és: "+operand1+". El operand1: "+myCalc.esPrim(operand1)+" és prim.");
+	System.out.println("El operand 1 és: "+operand1+". El numero primo siguiente és: "+myCalc.siguienteprimo(operand1)+" .");
         System.out.println("Última operació realitzada: "+myCalc.getLastOp()+"; Últim resultat: "+myCalc.getLastResult());
     }
 }
