@@ -185,7 +185,7 @@ public class App {
     }
 }
 ```
-3.3. Afegint dependències
+#  3.3. Afegint dependències
 
 Moltes vegades, als nostres projectes necessitarem algunes funcionalitats que no proporcionen les pròpies llibreríes de Java, i ho farem mitjançant llibreríes de tercers. Per exemple, quan hajam de treballar amb fitxers JSON necessiterem una llibreria que ens permeta entendre aquest tipus de fitxers, o quan hajam de treballar amb connectors a bases de dades, necessitarem llibreries que s'encarreguen de facilitar-nos les connexions.
 
@@ -193,15 +193,15 @@ Un dels llocs de referència per tal de trobar és el repositori de Maven (https
 
 Com a exemple, anem a veure com inclouriem una llibrería externa dins les nostres dependències. Anem a utilitzar la llibrería Apache Commons Math, amb funcions matemàtiques addicionals. Per a això, busquem mitjançant el quadre de cerca de la web del repositori Maven alguna llibreria que continga Math i veurem que aquesta ens apareix la primera:
 
-Búsqueda de la llibrería math
+# Búsqueda de la llibrería math
 
 Si fem clic en ella, ens portarà a una altra pàgina amb les diferents versions d'aquesta llibreria:
 
-Búsqueda de la llibrería math
+# Búsqueda de la llibrería math
 
 Fem clic a la versió més recent (3.6.1), i en la següent pàgina, veurem una secció amb diferents pestanyes, per tal d'utilitzar la llibreria en diferents sistemes. Fem clic a la pestanya de Gradle, ja que la volem incloure en un projecte d'aquest tipus, i copiem el contingut que ens ofereix al portaretalls:
 
-Búsqueda de la llibrería math
+# Búsqueda de la llibrería math
 
 Ara editarem el fitxer build.gradle del nostre projecte, i modificarem dues de les seccions que apareixen. En primer lloc, cal modificar la secció de repositoris, per tal d'afegir el repositori de Maven, per a això, localitzem la secció repositories, i afegim la línia mavenCentral() a aquest. Ens quedarà de la següent forma:
 
@@ -270,7 +270,7 @@ mainClassName = 'com.ieseljust.edd.calc.App'
 
 ```
 
-De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementada a un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calcula si es tracta de Calcula.java dins la carpeta/subpaquet calc.
+De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementada a un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calculadora si es tracta de Calculadora.java dins la carpeta/subpaquet calc.
 
 3.2. Construcció i execució del projecte
 
@@ -371,31 +371,11 @@ Finalment, per tal d'executar l'aplicació, només haure d'invocar gradle run pe
 ```
 $ gradle run
 
-> Task :run
-Hello world.
-BUILD SUCCESSFUL in 1s
-2 actionable tasks: 1 executed, 1 up-to-date
 ```
 
 
 Ara, quan construïm el projecte, automàticament es descarregarà la llibreria commons-math3 i estarà preparada per utilitzar-se al projecte. Quan fem un clean, aquesta s'esborrarà, per tornar a descarregar-se en una nova construcció.
 
-
-TO-DO
-
-   Creeu un projecte amb Gradle per al vostre codi de la calculadora. A aquesta calculadora haureu d'afegir ara a més dos mètodes més:
-
-   public Boolean esPrim(float op1){...}
-
-   Aquesta funció ens retornarà un valor lògic, indicant si el número és prim o no (prim=divisible només per ell mateix i per 1).
-
-   public Integer proximPrim(float op1){...}
-
-   Que ens retornarà el següent número prim al que li indiquem (si indiquem un prim ens retornarà el mateix)
-
-   Per a estos mètodes haureu d'utilitzar les els mètodes estàtics isPrime((int) op1)) i nextPrime((int) op1) de la classe Primes, que haurem d'importar al projecte mitjançant l'import de la llibreria org.apache.commons.math3.primes.Primes; que hem inclòs per utilitzar al fitxer gradle.build.
-
-   Ara, a més, al programa principal, després de mostrar totes les operacions anteriors, haurà d'indicar si el primer argument proporcionat és prim i quin és el seu pròxim número prim.
 
    L'eixida del programa serà una cosa semblant a aquesta:
 
@@ -411,5 +391,5 @@ TO-DO
     El número 4.0 NO és prim
     El prim següent de 4.0 es 5
 
-    Podeu utilitzar qualsevol dels mecanismes i IDEs què hem vist.
+Podem utilitzar qualsevol dels mecanismes i IDEs què hem vist.
 
