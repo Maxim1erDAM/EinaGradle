@@ -383,13 +383,15 @@ Ara, quan construïm el projecte, automàticament es descarregarà la llibreria 
     $ gradle run --args "4 3"
 
     Task :run
-    La suma entre 4.0 i 3.0 és 7.0
-    La resta entre 4.0 i 3.0 és 1.0
-    La multiplicació entre 4.0 i 3.0 és 12.0
-    La divisió entre 4.0 i 3.0 és 1.3333334
-    Última operació realitzada: Divideix; Últim resultat: 1.3333334
-    El número 4.0 NO és prim
-    El prim següent de 4.0 es 5
+    La suma entre 4.0 i 5.0 és 9.0
+    La resta entre 4.0 i 5.0 és -1.0
+    La multiplicació entre 4.0 i 5.0 és 20.0
+    La divisió entre 4.0 i 5.0 és 0.8
+    El número major entre els números pasat com a arguments, que són: 4.0 i 5.0. El major es el número:5.0
+    La mitja entre els números pasat com a arguments, que són: 4.0 i 5.0. El mitja es el número:4.5
+    El operand 1 és: 4.0. El operand1:  NO  és prim.
+    El operand 1 és: 4.0. El numero primo siguiente és: 5.0 .
+    Última operació realitzada: siguienteprimohasta97; Últim resultat: 5.0
 
 Podem utilitzar qualsevol dels mecanismes i IDEs què hem vist.
 
