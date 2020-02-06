@@ -4,7 +4,7 @@
 
 # Index:
 >
->***[1. Introducció a Gradle.](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#1-eines-dautomatitzaci%C3%B3-en-java)***
+>***[1. Introducció a Gradle](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#1-eines-dautomatitzaci%C3%B3-en-java)***
 >
 >***[2. Instal·lació de Gradle](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
 >
