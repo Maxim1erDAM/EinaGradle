@@ -32,9 +32,14 @@ $ sudo apt-get update
 ```
 $ sudo apt-get install gradle
 ```
-
-
-
+Nosaltres instalarem la nostra versió que es troba al repositori bionic de ieseljust: 
+```
+sudo add-apt-repository ppa:ieseljust/bionic
+sudo apt-get update
+```
+```
+sudo apt install gradle-5.1
+```
 Com veurem, el paquet arrossega moltes dependències. Diem que sí a tot, i una vegada instal·lat, podem comprovar la versió amb:
 
 ```
@@ -56,11 +61,11 @@ OS:           Linux 4.15.0-72-generic amd64
 
 Com podem veure, se'ns mostra informació sobre la versió de Gradle (5.1), Groovy (2.5.4), Ant (1.9.13), JVM (11.0.5), entre d'altres, així com el sistema operatiu.
 
-3. Exemple amb Gradle
+# 3. Exemple amb Gradle
 
 Anem a veure com fariem amb Gradle el projecte per a un Hola Món típic.
 
-3.1. Creació d'un projecte
+# 3.1. Creació d'un projecte
 
 Per tal de crear un projecte nou en Gradle, farem ús de l'ordre gradle init. Per a això, ens ubiquem en una carpeta buida, invoquem gradle init i anem seguint l'assistent:
 
