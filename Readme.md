@@ -7,9 +7,9 @@
 
 
 
->### UNITAT 4. Automatització amb Gradle.
+# UNITAT 4. Automatització amb Gradle.
 
-1. Introducció a Gradle
+## 1. Introducció a Gradle
 
 Fins ara hem vist dues eines per tal de crear projectes en Java i gestionar les seues dependències: Ant i Maven. Ant, com hem vist és una eina molt versàtil, però deixa al desenvolupador la responsabilitat de definir totes les tasques que s'han de fer i com fer-les, el que porta a grans fitxers de construcció (build.xml), que a més poden ser molt complexos. Maven, per la seua banda, ens ho dóna tot predefinit, i els fitxers de configuració (pom.xml) no són excessivament complexos. A més, dóna suport a tot el cicle de vida de construcció. L'inconvenient que suposa és que quan volem realitzar algun projecte que no s'ajuste als arquetipus que té predefinits, pot arribar a ser bastant complex. Per altra banda, al tractar-se d'una eina tan completa, també creix en complexitat, fins al punt de, com hem vist a l'exemple de l'hola Món, generar fitxers de construcció pom.xml més llargs que el propi codi de l'aplicació.
 
@@ -190,7 +190,7 @@ public class App {
     }
 }
 ```
-#  3.3. Afegint dependències
+## 3.2 Afegint dependències
 
 Moltes vegades, als nostres projectes necessitarem algunes funcionalitats que no proporcionen les pròpies llibreríes de Java, i ho farem mitjançant llibreríes de tercers. Per exemple, quan hajam de treballar amb fitxers JSON necessiterem una llibreria que ens permeta entendre aquest tipus de fitxers, o quan hajam de treballar amb connectors a bases de dades, necessitarem llibreries que s'encarreguen de facilitar-nos les connexions.
 
@@ -271,7 +271,7 @@ mainClassName = 'com.ieseljust.edd.calc.App'
 
 De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementada a un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calculadora si es tracta de Calculadora.java dins la carpeta/subpaquet calc.
 
-# 3.2. Construcció i execució del projecte
+## 3.3. Construcció i execució del projecte
 
 Una vegada hem vist l'esquelet del projece, podem construir-lo amb l'ordre gradle build, des de la carpeta principal del projecte:
 
