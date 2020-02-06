@@ -2,9 +2,13 @@
 
 ***2019- Editat per Máxim Sánchez Porta***
 
-
 # Index:
-
+>
+>***[1. Introducció a Gradle.](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#1-eines-dautomatitzaci%C3%B3-en-java)***
+>
+>***[# 2. Instal·lació de Gradle](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
+>
+>***[# 3. Exemple amb Gradle i creació d'un projecte](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#3-%C3%BAs-dant)***
 
 
 # UNITAT 4. Automatització amb Gradle.
@@ -64,11 +68,10 @@ OS:           Linux 4.15.0-20-generic amd64
 
 Com podem veure, se'ns mostra informació sobre la versió de Gradle (5.1), Groovy (2.5.4), Ant (1.9.13), JVM (11.0.5), entre d'altres, així com el sistema operatiu.
 
-# 3. Exemple amb Gradle
+# 3. Exemple amb Gradle i creació d'un projecte
 
 Anem a veure com fariem amb Gradle el projecte per a un Hola Món típic.
 
-# 3.1. Creació d'un projecte
 
 En primer lloc, creem el directori del projecte i accedim a ell:
 
