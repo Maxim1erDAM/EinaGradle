@@ -11,7 +11,7 @@
 
 ## 1. Introducció a Gradle
 
-Fins ara hem vist dues eines per tal de crear projectes en Java i gestionar les seues dependències: Ant i Maven. Ant, com hem vist és una eina molt versàtil, però deixa al desenvolupador la responsabilitat de definir totes les tasques que s'han de fer i com fer-les, el que porta a grans fitxers de construcció (build.xml), que a més poden ser molt complexos. Maven, per la seua banda, ens ho dóna tot predefinit, i els fitxers de configuració (pom.xml) no són excessivament complexos. A més, dóna suport a tot el cicle de vida de construcció. L'inconvenient que suposa és que quan volem realitzar algun projecte que no s'ajuste als arquetipus que té predefinits, pot arribar a ser bastant complex. Per altra banda, al tractar-se d'una eina tan completa, també creix en complexitat, fins al punt de, com hem vist a l'exemple de l'hola Món, generar fitxers de construcció pom.xml més llargs que el propi codi de l'aplicació.
+Fins ara hem vist dues eines per tal de crear projectes en Java i gestionar les seues dependències: Ant i Maven. Ant, com hem vist és una eina molt versàtil, però deixa al desenvolupador la responsabilitat de definir totes les tasques que s'han de fer i com fer-les, el que porta a grans fitxers de construcció (build.xml), que a més poden ser molt complexos. Maven, per la seua banda, ens ho dóna tot predefinit, i els fitxers de configuració (pom.xml) no són excessivament complexos. A més, dóna suport a tot el cicle de vida de construcció. L'inconvenient que suposa és que quan volem realitzar algun projecte que no s'ajuste als arquetipus que té predefinits, pot arribar a ser bastant complex. Per altra banda, al tractar-se d'una eina tan completa, també creix en complexitat, fins al punt de, com hem vist a l'exemple  generar fitxers de construcció pom.xml més llargs que el propi codi de l'aplicació.
 
 En aquest context, el 2008 apareix Gradle que pretén integrar el millor de cada eina: les tasques i la personalització d'Ant, la potència, el cicle de construcció i proves tipus Maven, o la gestió de dependències d'altres eines com Ivy. A més, segueix un paradigma de convenció sobre configuració: Totes les opcions de configuració tenen valors per defecte comuns o útils, de manera que només s'hauran de modificar per a casos especials.
 
@@ -19,7 +19,7 @@ Una altra diferència important és que Gradle no fa ús de fitxers de configura
 
 Per altra banda, Gradle disposa d'una arquitectura de plugins variats: compilació de projecte Java, Groovy, Maven, generació de documentació, proves, etc.
 
-Anem a seguir el mateix procediment que per a Maven, i crearem un projecte en Gradle de tipus Hola Món.
+Anem a seguir el mateix procediment que per a Maven, i crearem un projecte en Gradle.
 
 # 2. Instal·lació de Gradle
 
@@ -70,6 +70,13 @@ Anem a veure com fariem amb Gradle el projecte per a un Hola Món típic.
 
 # 3.1. Creació d'un projecte
 
+En primer lloc, creem el directori del projecte i accedim a ell:
+
+```
+$ mkdir helloGradle
+$ cd helloGradle
+```
+
 Per tal de crear un projecte nou en Gradle, farem ús de l'ordre gradle init. Per a això, ens ubiquem en una carpeta buida, invoquem gradle init i anem seguint l'assistent:
 
 ```
@@ -110,12 +117,6 @@ Creació del projecte amb una sola ordre
 
 Gradle també permet indicar-li mitjançant paràmetres les diferents característiques del projecte a generar. Així, podem fer exactament el mateix que amb l'assistent anterior de la següent forma:
 
-    En primer lloc, creem el directori del projecte i accedim a ell:
-
-```
-$ mkdir helloGradle
-$ cd helloGradle
-```
 
 I ara, llancem el gradle init amb els paràmetres corresponents al tipus d'aplicació, al tipus de test, al tipus de llenguatge per al build.gradle, el nom del projecte i el nom complet del paquet:
 
@@ -159,7 +160,6 @@ Hajam procedit bé amb l'assistent o bé generant directament el projecte, aques
 
 ```
 
-Com que de moment, no necessitem generar tests, podem esborrar els fitxers d'aquesta carpeta amb rm -r src/test.
 
 El contingut del fitxer App.java és :
 
@@ -236,7 +236,7 @@ dependencies {
 ```
 
 
-Veiem ara el contingut del fitxer de projecte build.gradle (llevem els comentaris per a què es llisca millor):
+Veiem ara el contingut del fitxer de projecte build.gradle :
 ```
 
 plugins {
@@ -273,7 +273,7 @@ mainClassName = 'com.ieseljust.edd.calc.App'
 
 ```
 
-De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementada a un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calculadora si es tracta de Calculadora.java dins la carpeta/subpaquet calc.
+De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.calc.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementat un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calculadora si es tracta de Calculadora.java dins la carpeta/subpaquet calc.
 
 ## 3.3. Construcció i execució del projecte
 
@@ -375,12 +375,19 @@ Finalment, per tal d'executar l'aplicació, només haure d'invocar gradle run pe
 $ gradle run
 
 ```
+Finalment, per saber comandes adicionals i per a les tasques relacionades amb Gradle:
+```
+$ gradle --help
 
+```
+```
+$ gradle tasks
 
-Ara, quan construïm el projecte, automàticament es descarregarà la llibreria commons-math3 i estarà preparada per utilitzar-se al projecte. Quan fem un clean, aquesta s'esborrarà, per tornar a descarregar-se en una nova construcció.
+```
 
+Ara, quan construïm el projecte, automàticament es descarregarà la llibreria commons-math3 , al realitzar el build.
 
-   L'eixida del programa serà una cosa semblant a aquesta:
+L'eixida del programa serà una cosa semblant a aquesta:
 
 
     $ gradle run --args "4 3"
