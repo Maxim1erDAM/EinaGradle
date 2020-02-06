@@ -21,7 +21,7 @@ Per altra banda, Gradle disposa d'una arquitectura de plugins variats: compilaci
 
 Anem a seguir el mateix procediment que per a Maven, i crearem un projecte en Gradle de tipus Hola Món.
 
-2. Instal·lació de Gradle
+# 2. Instal·lació de Gradle
 
 Gradle es troba als dipòsits de programari d'Ubuntu, pel que podem instal·lar-lo amb apt:
 
