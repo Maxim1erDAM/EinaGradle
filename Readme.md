@@ -43,6 +43,8 @@ sudo apt install gradle-5.1
 Com veurem, el paquet arrossega moltes dependències. Diem que sí a tot, i una vegada instal·lat, podem comprovar la versió amb:
 
 ```
+$ gradle -v
+
 ------------------------------------------------------------
 Gradle 5.1
 ------------------------------------------------------------
@@ -55,7 +57,8 @@ Kotlin:       1.3.11
 Groovy:       2.5.4
 Ant:          Apache Ant(TM) version 1.9.13 compiled on July 10 2018
 JVM:          11.0.5 (Private Build 11.0.5+10-post-Ubuntu-0ubuntu1.118.04)
-OS:           Linux 4.15.0-72-generic amd64
+OS:           Linux 4.15.0-20-generic amd64
+
 
 ```
 
