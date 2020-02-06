@@ -26,11 +26,11 @@ Anem a seguir el mateix procediment que per a Maven, i crearem un projecte en Gr
 Gradle es troba als dipòsits de programari d'Ubuntu, pel que podem instal·lar-lo amb apt:
 
 ```
-$ sudo apt-get update
+ sudo apt-get update
 ```
 
 ```
-$ sudo apt-get install gradle
+ sudo apt-get install gradle
 ```
 Nosaltres instalarem la nostra versió que es troba al repositori bionic de ieseljust: 
 ```
@@ -160,7 +160,8 @@ Com que de moment, no necessitem generar tests, podem esborrar els fitxers d'aqu
 
 El contingut del fitxer App.java és :
 
-```package com.ieseljust.edd.calc;
+```
+package com.ieseljust.edd.calc;
 
 import com.ieseljust.edd.calc.Calculadora;
 import static java.lang.Math.*;
@@ -204,8 +205,6 @@ Com a exemple, anem a veure com inclouriem una llibrería externa dins les nostr
 
 # Búsqueda de la llibrería math
 
-
-
 Ara editarem el fitxer build.gradle del nostre projecte, i modificarem dues de les seccions que apareixen. En primer lloc, cal modificar la secció de repositoris, per tal d'afegir el repositori de Maven, per a això, localitzem la secció repositories, i afegim la línia mavenCentral() a aquest. Ens quedarà de la següent forma:
 
 
@@ -232,8 +231,6 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
 }
 ```
-
-
 
 
 Veiem ara el contingut del fitxer de projecte build.gradle (llevem els comentaris per a què es llisca millor):
