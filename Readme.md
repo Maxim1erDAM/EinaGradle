@@ -6,7 +6,7 @@
 >
 >***[1. Introducció a Gradle](https://github.com/Maxim1erDAM/EinaGradle/blob/master/Readme.md#1-introducci%C3%B3-a-gradle)***
 >
->***[2. Instal·lació de Gradle](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
+>***[2. Instal·lació de Gradle](https://github.com/Maxim1erDAM/EinaGradle/blob/master/Readme.md#2-installaci%C3%B3-de-gradle)***
 >
 >***[3. Eixemple amb Gradle i creació d'un projecte](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#3-%C3%BAs-dant)***
 
