@@ -271,7 +271,7 @@ mainClassName = 'com.ieseljust.edd.calc.App'
 
 De moment, el que ens interessa és veure la secció de plugins, en la que indiquem que es tracta d'una aplicació java, i que la classe principal és com.ieseljust.edd.App. La secció de repositoris i dependències ens servirà quan treballem amb llibreries externes. Tingueu en compte que si la vostra classe principal -la que conté el mètode main- està implementada a un fitxer diferent a App.java, com per exemple Calcula.java, caldrà canviar també el mainClassName per a que faça referència a aquesta classe, així com si es troba en alguna subcarpeta -com.ieseljust.edd.calc.Calculadora si es tracta de Calculadora.java dins la carpeta/subpaquet calc.
 
-3.2. Construcció i execució del projecte
+# 3.2. Construcció i execució del projecte
 
 Una vegada hem vist l'esquelet del projece, podem construir-lo amb l'ordre gradle build, des de la carpeta principal del projecte:
 
@@ -365,7 +365,7 @@ Per altra banda, si volem netejar el projecte i tornar a la configuració anteri
 $ gradle clean
 ```
 
-Finalment, per tal d'executar l'aplicació, només haure d'invocar gradle run per executar aquest:
+Finalment, per tal d'executar l'aplicació, només haure d'invocar gradle run per executar aquest, pero l'aplicació de gradle i els diferents directoris de Java han d'estar correctament configurants:
 
 ```
 $ gradle run
