@@ -195,13 +195,7 @@ Com a exemple, anem a veure com inclouriem una llibrería externa dins les nostr
 
 # Búsqueda de la llibrería math
 
-Si fem clic en ella, ens portarà a una altra pàgina amb les diferents versions d'aquesta llibreria:
 
-# Búsqueda de la llibrería math
-
-Fem clic a la versió més recent (3.6.1), i en la següent pàgina, veurem una secció amb diferents pestanyes, per tal d'utilitzar la llibreria en diferents sistemes. Fem clic a la pestanya de Gradle, ja que la volem incloure en un projecte d'aquest tipus, i copiem el contingut que ens ofereix al portaretalls:
-
-# Búsqueda de la llibrería math
 
 Ara editarem el fitxer build.gradle del nostre projecte, i modificarem dues de les seccions que apareixen. En primer lloc, cal modificar la secció de repositoris, per tal d'afegir el repositori de Maven, per a això, localitzem la secció repositories, i afegim la línia mavenCentral() a aquest. Ens quedarà de la següent forma:
 
