@@ -8,7 +8,7 @@
 >
 >***[2. Instal·lació de Gradle](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#2-apache-ant-another-neat-tool---activitat-practica)***
 >
->***[3. Exemple amb Gradle i creació d'un projecte](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#3-%C3%BAs-dant)***
+>***[3. Eixemple amb Gradle i creació d'un projecte](https://github.com/Maxim1erDAM/EinaANT/blob/master/Readme.md#3-%C3%BAs-dant)***
 
 
 # UNITAT 4. Automatització amb Gradle.
