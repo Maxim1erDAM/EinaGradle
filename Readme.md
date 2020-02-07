@@ -130,6 +130,8 @@ $ gradle init   --type java-application \
                 --project-name helloGradle \
                 --package com.ieseljust.edd
 ```
+Captura de la meua máquina virtual:
+![ImatgeGradleBuildCompilacio](/Imatges/asistente%20gradle5.1%20parte%202.png)
 
 Com veurem, si ho fem així, el projecte es genera directament, sense fer-nos cap pregunta.
 
@@ -288,6 +290,7 @@ $ gradle build
 BUILD SUCCESSFUL in 20s
 7 actionable tasks: 7 executed
 ```
+![ImatgeGradleBuildCompilacio](/Imatges/asistente%20gradle%201.png)
 
 Amb açò, compila, processa els recursos i genera les classes i l'empaquetat jar de l'aplicació. Si ens fixem, tenim una nova carpeta build amb el resultat de la construcció del paquet:
 
