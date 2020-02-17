@@ -388,9 +388,7 @@ $ gradle --help
 ```
 ```
 $ gradle tasks
-
 ```
-
 Ara, quan construïm el projecte, automàticament es descarregarà la llibreria commons-math3 , al realitzar el build.
 
 L'eixida del programa serà una cosa semblant a aquesta:
@@ -411,6 +409,4 @@ L'operand 1 és: 252.0. El numero primo seguent és: 97.0 .
 BUILD SUCCESSFUL in 4s
 2 actionable tasks: 1 executed, 1 up-to-date
 
-
 Podem utilitzar qualsevol dels mecanismes i IDEs què hem vist.
-
